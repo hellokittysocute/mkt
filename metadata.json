@@ -1,0 +1,6 @@
+{
+  "name": "코스맥스 품질검사관리 Teams 알림",
+  "description": "입고검사 부적합 발생 시 Teams 채널에 자동 발송되는 알림 메시지 시연용 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
