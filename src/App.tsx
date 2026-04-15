@@ -173,7 +173,7 @@ export default function App() {
             isBot
           />
           <ChatItem name="품질보증팀" lastMsg="검사 결과 확인 부탁드립니다." time="오후 6:30" />
-          <ChatItem name="생산관리팀" lastMsg="입고 일정이 변경되었습니다." time="오후 5:12" />
+          <ChatItem name="생산운영팀" lastMsg="제조일정 확인해주세요." time="오후 5:12" />
           <ChatItem name="연구소" lastMsg="샘플 발송 완료했습니다." time="어제" />
         </div>
       </aside>
