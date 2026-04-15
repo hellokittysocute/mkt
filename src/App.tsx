@@ -64,7 +64,8 @@ export default function App() {
         ],
         actions: [
           { id: 'schedule', label: '재생일정 확인' },
-          { id: 'manager', label: '판정 담당자 확인' }
+          { id: 'manager', label: '판정 담당자 확인' },
+          { id: 'reason', label: '부적합 사유 확인' }
         ]
       }
     }
@@ -116,6 +117,23 @@ export default function App() {
           details: [
             { label: '품목명', value: '(자)구다이글로벌조선미녀컴포트프로택선바디선크림(무향)(수출용)' },
             { label: '판정 담당자', value: '김효정, 박성수, 송영훈, 박연선, 김은서, 조준희, 김민지' },
+          ]
+        }
+      };
+      setMessages(prev => [...prev, newMessage]);
+    } else if (actionId === 'reason') {
+      const newMessage: Message = {
+        id: Date.now().toString(),
+        sender: '코스맥스 품질검사관리',
+        avatar: 'CQ',
+        time: '2026-04-13 19:45',
+        isBot: true,
+        type: 'card',
+        content: {
+          title: '⚠️ 부적합 사유 안내',
+          details: [
+            { label: '품목명', value: '(자)구다이글로벌조선미녀컴포트프로택선바디선크림(무향)(수출용)' },
+            { label: '부적합 사유', value: '피부도포시 시큼한 취', isAlert: true },
           ]
         }
       };
